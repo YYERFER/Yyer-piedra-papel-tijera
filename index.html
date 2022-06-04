@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <header>
+       <h1 class="titulo">Juego de Piedra , Papel o Tijera</h1> 
+    </header>
+    
+    <main>
+  
+        <div class="sub-titulo">
+            <!-- <h2>Seleccione la figura usuario</h2> -->
+            <strong class="text-slider"></strong>
+        </div>
+   
+                                    <!-- SECCION DE USUARIO -->
+                            
+        <section class="sec_cajas_user" >
+          
+                   <!-- PIEDRA -->
+            <div class="div-piedra">
+          
+                <input type="button"  value="Piedra" onclick="functPiedraUser()" id="id_piedra_user" >
+               
+            </div>
+                                                    <!-- PAPEL -->
+            <div class="div-papel">
+               
+                <input type="button" value="Papel" onclick="functPapelUser()" id="id_papel_user" >
+                         
+            </div>
+                                                    <!-- TIJERA -->
+            <div class="div-tijera">
+    
+                <input type="button" value="Tijera" onclick="functTijeraUser()" id="id_tijera_user" >
+              
+            </div>
+        
+    </section>
+
+    <div class="div_usuario_p">
+        <p id="id_usuario" class="cl_usuario"></p>
+    </div>
+
+    <div id="div_txt">
+        <input type="text" id="txt_usuario">
+                                    
+    </section>
+
+                            <!-- SECCION ALEATORIA -->
+
+    <section class="sec_cajas_ale">
+
+        <div class="div-ale">
+        
+            
+                <button value="Tijera" onclick="return changeImg(0)" id="btn" class="classBtn" disabled="false">
+                    <img name="img1" src="../img/piedra.png" alt="" class="img-ale" id="id_img">
+                    <p id="p-button-name">Clic!!</p>
+                    </button>
+            
+        
+        </div>
+        <!-- INPUT TEXTO ALEATORIO -->
+<input type="text" id="txt_ale">
+    </section>
+
+    <div class="div_usuario_p">
+        <p id="id_ale" class="cl_usuario"></p>
+    </div>
+
+<!-- SECCION DE RESULTADOS -->
+
+    </main>
+
+    <footer>
+        <div class="cl_resultado">
+            <input type="submit" value="Jugar" onclick="functLimpiar()">
+        </div>
+
+    </footer>
+    <script src="./typed/typed.min.js"></script>
+    <script src="./js/js.js"></script>
+</body>
+</html>

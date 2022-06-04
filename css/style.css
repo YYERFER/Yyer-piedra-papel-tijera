@@ -1,0 +1,250 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url(../img/vector-nature-game.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+}
+.titulo{
+    text-align: center;
+    font-size: 60px;
+    -webkit-text-stroke-color: rgb(64, 125, 182);
+    -webkit-text-stroke-width: 3px;
+    color: rgb(226, 241, 7);
+
+}
+.sub-titulo{
+    text-align: center; 
+}
+
+.sub-titulo strong{
+  
+    font-size: 40px;
+    text-shadow: 0px 0px 15px rgb(15, 12, 12);
+    color: #eb1515;
+    -webkit-text-stroke-color: rgba(223, 238, 20, 0.404);
+    -webkit-text-stroke-width: 2px;
+    
+}
+ /* Esta es la seccion de las fioguras de las caja usuario */
+.sec_cajas_user {
+    display: flex;
+    flex-wrap: wrap;
+    background: #7cb80c;
+    justify-content:space-around;
+    height: 170px;
+   opacity: 0.8;
+  }
+ 
+            /* ESTILO A LA PIEDRA */
+
+.div-piedra {
+    background: url('../img/piedra.png') no-repeat bottom / contain;
+    border: 1px black solid;
+    border-radius: 30px;
+    width: 130px;
+    height: 130px;
+    margin: 20px 0px;
+    box-shadow: 0px 0px 30px 0px rgb(79, 28, 5);
+    
+}
+.div-piedra input:hover{
+    cursor: pointer;
+}
+.div-piedra input:focus{
+    transform: scale(1.3);
+}
+
+.div-piedra input{
+    width: 130px;
+    height: 130px;
+   opacity: 0.5;
+   font-weight: bold;
+   font-size: 40px;
+   border-radius: 30px;
+
+}
+
+
+.div_usuario_p{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+.cl_usuario{
+    display: flex;
+    background-color: rgb(186, 191, 195);
+    width: 500px;
+    height: 50px;
+    border-radius: 50px;
+    color: rgb(16, 15, 15);
+    box-shadow: 0px 0px 25px 2px;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    
+}
+
+
+            /* ESTILO AL PAPEL */
+
+.div-papel{
+    background: url(../img/papel.png) no-repeat bottom / contain;
+    border: 1px black solid;
+    border-radius: 50px;
+    width: 130px;
+    height: 130px;
+    margin: 40px 0px 10px 30px;
+    text-align: center;
+    margin: 20px 0px;
+    box-shadow: 0px 0px 30px 0px rgb(79, 28, 5);
+   
+}
+.div-papel h2{ 
+    color: rgb(47, 0, 255);
+   
+}
+.div-papel input{
+    border-radius: 50px;
+    width: 130px;
+    height: 130px;
+   opacity: 0.5;
+   font-weight: bold;
+   font-size: 40px;
+}
+.div-papel input:hover{
+    cursor: pointer;
+}
+.div-papel input:focus{
+    transform: scale(1.3);
+}
+
+
+        /* ESTILO A LA TIJERA */
+
+.div-tijera{
+    background: url(../img/tijera.png) no-repeat bottom / contain;
+    border: 1px black solid;
+    border-radius: 50px;
+    width: 130px;
+    height: 130px;
+    margin: 40px 0px 40px 30px;
+    text-align: center;
+    margin: 20px 0px;
+    box-shadow: 0px 0px 30px 0px rgb(79, 28, 5);
+
+}
+.div-tijera h2{ 
+    color: red;
+}
+.div-tijera input{
+    border-radius: 50px;
+    width: 130px;
+    height: 130px;
+   opacity: 0.5;
+   font-weight: bold;
+   font-size: 40px;
+}
+.div-tijera input:hover{
+    cursor: pointer;
+
+}
+.div-tijera input:focus{
+    transform: scale(1.3);
+}
+    /* CONTENEDOR ALEATORIO*/
+
+.sec_cajas_ale{
+        display:flex; 
+        flex-wrap:wrap;
+        background: #7cb80c;
+        height: 150px;
+        margin-top: 50px;
+        width: 150px;
+        align-content: center;
+        justify-content: center;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 40px;
+      }
+
+.img-ale{
+    border: 1px black solid;
+    border-radius: 50px;
+    width: 130px;
+    height: 130px;
+    box-shadow: 0px 0px 30px;
+    display: none;
+    
+}
+.classBtn:hover{
+    cursor: pointer;
+}
+.classBtn:focus{
+    transform: scale(1.3);
+}
+#btn{
+    border: 1px black solid;
+    border-radius: 50px;
+    width: 130px;
+    height: 130px;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px gray;
+    font-size: 35px;
+    font-weight: bold;
+    opacity: 0.8;
+  
+}
+
+    /* OTROS RESULTADOS */
+
+footer{
+    margin-top: 30px ;
+}
+.cl_resultado{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+   
+}
+
+.cl_resultado input{
+    width: 300px;
+    height: 60px;
+    font-size: 40px;
+    box-shadow: 0px 0px 20px gray;
+    border-radius: 20px;
+    background-color: #13cc8e;
+    color: rgb(58, 10, 231);
+    font-weight:bold;
+    
+}
+.cl_resultado input:hover{
+    cursor: pointer;
+    /* width: 110px; */
+    /* height: 60px; */
+    font-size: 45px;
+    color: #740704e5;
+    background: #e7e40f;
+    border-radius: 20px;
+    font-weight:bold;
+    transform: scale(1.07);
+    transition: transform ease-in 0.2s;
+}
+.cl_p{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+}
+#txt_usuario{
+    display: none;
+}
+#txt_ale{
+    display: none;
+}
+
